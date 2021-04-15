@@ -1,7 +1,6 @@
 import os
 import subprocess
-import sys
-from sys import platform
+from sys import platform,executable
 from subprocess import call
 from random import choice
 from time import sleep
