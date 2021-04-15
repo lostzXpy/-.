@@ -14,6 +14,10 @@ def clear():
         command = 'clear'
     call(command, shell=True)
     
+vermelho = '\033[1;31m'
+verde = '\033[1;32m'
+a = '\033[m[\033[1;33m+\033[m]'
+
 print('{} Verificando atualizações...'.format(a))
 update = subprocess.check_output('git pull', shell=True)
 if 'Already up to date' not in update.decode():
@@ -21,10 +25,6 @@ if 'Already up to date' not in update.decode():
     sleep(3)
     subprocess.run('clear')
     restart()
-
-vermelho = '\033[1;31m'
-verde = '\033[1;32m'
-a = '\033[m[\033[1;33m+\033[m]'
 
 clear()
 
