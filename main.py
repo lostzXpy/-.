@@ -138,8 +138,8 @@ while True:
             
     elif menu == '3':
         if platform not in ('win32', 'cygwin'):
-                command = 'sh tools/painel.sh'
-            call(command, shell=True)
+            command = 'sh tools/painel.sh'
+        call(command, shell=True)
     elif menu == '0':
         print(erro)
         sleep(2)
