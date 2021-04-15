@@ -25,7 +25,10 @@ if 'Already up to date' not in update.decode():
     sleep(3)
     subprocess.run('clear')
     restart()
-
+else:
+    print('{} Nenhuma atualização disponível.'.format(a))
+    sleep(3)
+    
 clear()
 
 nome = input('{} Me diga como quer ser chamado: '.format(a))
@@ -39,21 +42,19 @@ while True:
 >>> '''.format(a))
     if tema == '1':
         print('\nTema definido para {}vermelho!\n'.format(vermelho))
+        sleep(2)
         b = '\033[1;31m'
         c = '\033[m'
         break
     elif tema == '2':
         print('\nTema definido para {}verde!\n'.format(verde))
+        sleep(2)
         b = '\033[1;32m'
         c = '\033[m'
         break
     else:
         print('\nOpção inválida\n')
 
-else:
-    print('{} Nenhuma atualização disponível.'.format(a))
-    sleep(3)
-    
 welcome = ['Bem vindo','Use com moderação','Use com consiência','Você é foda','Você é o mais brabo']
 kkk = choice(welcome)
 erro = '{} Ops! Parece que você escolheu uma opção não definida'.format(a)
