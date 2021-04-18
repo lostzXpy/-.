@@ -88,6 +88,7 @@ while True:
 
 {0}[{1}0{0}]{1} - Sair
 
+
 {0}>>>{1} '''.format(b,c,kkk,nome))
 
     if menu == '1':
