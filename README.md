@@ -1,4 +1,4 @@
-# losTool vBETA &middot; [!["GitHub Discussions"](https://img.shields.io/badge/%20GitHub-%20Discussions-gray.svg?longCache=true&logo=github&colorB=purple)](https://github.com/Kiny-Kiny/Kiny-Painel/discussions)
+# losTool vBETA
 
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lostzXpy/losTool?style=flat" /> 
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/lostzXpy/losTool?style=flat" />
