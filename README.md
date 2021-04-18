@@ -8,7 +8,7 @@
 
 # O que é a losTool?
 
-Esta ferramenta foi desenvolvida por @lostkkj_ com diversas funcionalidades "hacker". Estou criando essa ferramenta para treinar meu aprendizado com a linguagem python,pois ainda sou um aprendiz.
+Esta ferramenta foi desenvolvida por @onelost.exe com diversas funcionalidades "hacker". Estou criando essa ferramenta para treinar meu aprendizado com a linguagem python,pois ainda sou um aprendiz.
 Por favor use-a com consciência para não responder pelos seus atos em um tribunal.
 (Leia o arquivo TDU.md)
 
