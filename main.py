@@ -68,7 +68,7 @@ while True:
 | | (_) \__ \| |{0} (_) | (_) {1}| |
 |_|\___/|___/|_|{0}\___/ \___/{1}|_|
                           
-Author: {0}@lostkkj_{1}
+Author: {0}@onelost.exe{1}
 Version: {0}BETA{1}
 
 
