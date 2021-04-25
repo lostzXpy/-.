@@ -34,10 +34,11 @@ else:
 nome = input('{} Me diga como quer ser chamado: '.format(a))
 senha = input('{} Digite a senha: '.format(a))
 
-while True:
-    if senha != 'ByOneLost':
+senhar = 'ByOneLost'
+
+if senha != senhar:
+    while True:
         print('\nSenha incorreta!\n')
-        
 while True:
     tema = input('''{} Qual tema você quer usar na ferramenta?
     
