@@ -465,15 +465,13 @@ async function op6(numero, quantidade) {
 
 // Options (Menu de comando).
 function options() {
-	console.log('\n\nSMS SPAM\n\n'.error);
-	console.log('1 - Spam ( Vivo )');
-	console.log('2 - Spam ( Claro )');
-	console.log('3 - Spam ( 99 Food )');
-	console.log('4 - Spam ( Aiqfome )');
-	console.log('5 - Spam ( Uber Eats )');
-	console.log('6 - Spam ( RecargaMulti )');
-	return readLine.question('\n\n>>> '.error);
-}
+
+	console.log('2 - Spam Claro');
+	console.log('3 - Spam 99 Food');
+	console.log('4 - Spam Aiqfome');
+	console.log('5 - Spam Uber Eats');
+	console.log('6 - Spam RecargaMulti');
+	return readLine.question('\n\n>>>');
 
 spam.option = options();
 
