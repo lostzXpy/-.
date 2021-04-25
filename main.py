@@ -32,9 +32,8 @@ else:
     sleep(3)
   
 nome = input('{} Me diga como quer ser chamado: '.format(a))
-senha = input('{} Digite a senha: '.format(a))
 
-senhar = 'ByOneLost'
+senha = 'ByOneLost'
 
 while True:
     tema = input('''{} Qual tema você quer usar na ferramenta?
@@ -162,6 +161,3 @@ Version: {0}BETA{1}
         print(erro)
         sleep(2)
         print(menu)
-
-if senha == senhar:
-   print('\nSenha incorreta!\n')
