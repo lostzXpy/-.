@@ -19,7 +19,7 @@ a = '\033[m[\033[1;33mi\033[m]'
     
 clear()
 
-print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
+print('\033[1;33mAviso | \033[mO senna é gay\n')
 print('{} Verificando atualizações...'.format(a))
 update = subprocess.check_output('git pull', shell=True)
 if 'Already up to date' not in update.decode():
