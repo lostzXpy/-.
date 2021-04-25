@@ -37,9 +37,9 @@ senha = input('{} Digite a senha: '.format(a))
 senhar = 'ByOneLost'
 
 if senha != senhar:
-    while True:
-        print('\nSenha incorreta!\n')
-        os.system('exit')
+   print('\nSenha incorreta!\n')
+   os.system('exit')
+
 while True:
     tema = input('''{} Qual tema você quer usar na ferramenta?
     
