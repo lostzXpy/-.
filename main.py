@@ -140,12 +140,12 @@ Version: {0}BETA{1}
         painel = input('\n{} A senha do painel é: VirtualInsanity\nPress enter\n'.format(a))
         os.system('sh tools/painel.sh')
         
-    elif menu == '9':
+    elif menu == '6':
         clear()
         chat = input('\nCOMO ENTRAR NO {0}CHAT{1}\n\n{0}[{1}1{0}]{1} - /connect chat.freenode.net\n{0}[{1}2{0}]{1} - /nick (seu nick)\n{0}[{1}3{0}]{1} - /join #OneLost\n\nDivirta-se no chat! (Press enter) '.format(b,c))
         os.system('pkg install irssi && irssi')
     elif menu == '0':
-        print('\nSaindo em 2 segundos...\n')
+        print('\n{} Saindo em 2 segundos...\n'.format(a))
         sleep(2)
         break
     
@@ -155,7 +155,7 @@ Version: {0}BETA{1}
         os.system('termux-open-url https://youtube.com/channel/UCGI7eobXY2zsLib_3Clq_DQ')
     elif menu == '03':
         os.system('termux-open-url https://www.instagram.com/invites/contact/?i=6ufp6gxb2azy&utm_content=jt3qoto')
-    elif menu == '03':
+    elif menu == '04':
         os.system('termux-open-url https://api.whatsapp.com/send?phone=5511994677319&text=Eaekkkk')
     else:
         print(erro)
