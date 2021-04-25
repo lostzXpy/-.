@@ -473,6 +473,7 @@ function options() {
 	console.log('6 - Spam RecargaMulti');
 	return readLine.question('\n\n>>>');
 
+}
 spam.option = options();
 
 if (spam.option == 1) {
