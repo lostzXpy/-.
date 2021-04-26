@@ -6,6 +6,12 @@ from subprocess import call
 from random import choice
 from time import sleep
 
+def exit():
+    animation = ['[[\033[1;33mi\033[m] Saindo em 3 segundos...','[[\033[1;33mi\033[m] Saindo em 3 segundos...','[[\033[1;33mi\033[m] Saindo em 3 segundos...']
+    for i in range(len(animation)):
+        sleep(0.1)
+        sys.stdout.write("\r" + animation[i % len(animation)])
+        sys.stdout.flush()
 def spin():
     animation = ['[▒▒▒▒▒▒▒▒▒▒]','[█▒▒▒▒▒▒▒▒▒]','[██▒▒▒▒▒▒▒▒]','[███▒▒▒▒▒▒▒]','[████▒▒▒▒▒▒]','[█████▒▒▒▒▒]','[██████▒▒▒▒]','[███████▒▒▒]','[████████▒▒]','[█████████▒]','[██████████]']
     for i in range(len(animation)):
@@ -160,9 +166,9 @@ Version: {0}BETA{1}
         clear()
         chat = input('\nCOMO ENTRAR NO {0}CHAT{1}\n\n{0}[{1}1{0}]{1} - /connect chat.freenode.net\n{0}[{1}2{0}]{1} - /nick (seu nick)\n{0}[{1}3{0}]{1} - /join #OneLost\n\nDivirta-se no chat! (Press enter) '.format(b,c))
         os.system('pkg install irssi && irssi')
+
     elif menu == '0':
-        print('\n{} Saindo em 2 segundos...\n'.format(a))
-        sleep(2)
+        exit()
         break
     
     elif menu == '01':
