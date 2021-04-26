@@ -171,7 +171,7 @@ Version: {0}BETA{1}
     elif menu == '0':
         print('')
         exit()
-        print('')
+        print('\n')
         break
     
     elif menu == '01':
