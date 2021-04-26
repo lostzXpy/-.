@@ -169,8 +169,9 @@ Version: {0}BETA{1}
         os.system('pkg install irssi && irssi')
 
     elif menu == '0':
-        print('\n' + exit())
-        print('\n')
+        print('')
+        exit()
+        print('')
         break
     
     elif menu == '01':
