@@ -50,15 +50,19 @@ while True:
     
 >>> '''.format(a))
     if tema == '1':
-        print('\nTema definido para {}vermelho!\n'.format(vermelho))
+        print('\nTema definido para {}vermelho!\n\033[m'.format(vermelho))
+        print('\n')
         spin()
+        print('\n')
         b = '\033[1;31m'
         c = '\033[m'
         sleep(1)
         break
     elif tema == '2':
-        print('\nTema definido para {}verde!\n'.format(verde))
+        print('\nTema definido para {}verde!\n\033[m'.format(verde))
+        print('\n')
         spin()
+        print('\n')
         b = '\033[1;32m'
         c = '\033[m'
         sleep(1)
