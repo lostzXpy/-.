@@ -6,6 +6,12 @@ from subprocess import call
 from random import choice
 from time import sleep
 
+def spin():
+    animation = ['[▒▒▒▒▒▒▒▒▒▒]','[█▒▒▒▒▒▒▒▒▒]','[██▒▒▒▒▒▒▒▒]','[███▒▒▒▒▒▒▒]','[████▒▒▒▒▒▒]','[█████▒▒▒▒▒]','[██████▒▒▒▒]','[███████▒▒▒]','[████████▒▒]','[█████████▒]','[██████████]']
+    for i in range(len(animation)):
+        sys.stdout.write("\r" + animation[i % len(animation)])
+        sys.stdout.flush()
+
 def restart():
     python = sys.executable
     os.execl(python, python, *sys.argv)
@@ -44,12 +50,14 @@ while True:
 >>> '''.format(a))
     if tema == '1':
         print('\nTema definido para {}vermelho!\n'.format(vermelho))
+        spin()
         b = '\033[1;31m'
         c = '\033[m'
         sleep(1)
         break
     elif tema == '2':
         print('\nTema definido para {}verde!\n'.format(verde))
+        spin()
         b = '\033[1;32m'
         c = '\033[m'
         sleep(1)
@@ -110,6 +118,7 @@ Version: {0}BETA{1}
 {0}>>>{1} '''.format(b,c))
 
         if spam == '1':
+            spin()
             os.system('node tools/spam.js')
             break
         elif spam == '2':
