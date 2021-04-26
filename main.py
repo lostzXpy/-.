@@ -7,9 +7,9 @@ from random import choice
 from time import sleep
 
 def exit():
-    animation = ['[[\033[1;33mi\033[m] Saindo em 3 segundos...','[[\033[1;33mi\033[m] Saindo em 3 segundos...','[[\033[1;33mi\033[m] Saindo em 3 segundos...']
+    animation = ['[\033[1;33mi\033[m] Saindo em 3 segundos...','[\033[1;33mi\033[m] Saindo em 3 segundos...','[\033[1;33mi\033[m] Saindo em 3 segundos...']
     for i in range(len(animation)):
-        sleep(0.1)
+        sleep(1)
         sys.stdout.write("\r" + animation[i % len(animation)])
         sys.stdout.flush()
 def spin():
@@ -168,7 +168,9 @@ Version: {0}BETA{1}
         os.system('pkg install irssi && irssi')
 
     elif menu == '0':
+        print('\n')
         exit()
+        print('\n')
         break
     
     elif menu == '01':
