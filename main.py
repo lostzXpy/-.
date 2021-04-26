@@ -10,7 +10,7 @@ def spin():
     animation = ['[▒▒▒▒▒▒▒▒▒▒]','[█▒▒▒▒▒▒▒▒▒]','[██▒▒▒▒▒▒▒▒]','[███▒▒▒▒▒▒▒]','[████▒▒▒▒▒▒]','[█████▒▒▒▒▒]','[██████▒▒▒▒]','[███████▒▒▒]','[████████▒▒]','[█████████▒]','[██████████]']
     for i in range(len(animation)):
         sleep(0.1)
-        sys.stdout.write("\r\n" + animation[i % len(animation)] + "\n")
+        sys.stdout.write("\r" + animation[i % len(animation)])
         sys.stdout.flush()
 
 def restart():
@@ -119,7 +119,9 @@ Version: {0}BETA{1}
 {0}>>>{1} '''.format(b,c))
 
         if spam == '1':
+            print('\n')
             spin()
+            print('\n')
             os.system('node tools/spam.js')
             break
         elif spam == '2':
