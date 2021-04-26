@@ -33,17 +33,17 @@ a = '\033[m[\033[1;33mi\033[m]'
     
 clear()
 
-print('\033[1;33mAviso | \033[mO senna é gay\n')
+print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
 print('{} Verificando atualizações...'.format(a))
 update = subprocess.check_output('git pull', shell=True)
 if 'Already up to date' not in update.decode():
     print('{} Atualizado com sucesso,iniciando...'.format(a))
-    sleep(3)
+    sleep(1)
     subprocess.run('clear')
     restart()
 else:
     print('{} Nenhuma atualização disponível.'.format(a))
-    sleep(3)
+    sleep(1)
   
 nome = input('{} Me diga como quer ser chamado: '.format(a))
 
