@@ -9,7 +9,8 @@ from time import sleep
 def spin():
     animation = ['[▒▒▒▒▒▒▒▒▒▒]','[█▒▒▒▒▒▒▒▒▒]','[██▒▒▒▒▒▒▒▒]','[███▒▒▒▒▒▒▒]','[████▒▒▒▒▒▒]','[█████▒▒▒▒▒]','[██████▒▒▒▒]','[███████▒▒▒]','[████████▒▒]','[█████████▒]','[██████████]']
     for i in range(len(animation)):
-        sys.stdout.write("\r" + animation[i % len(animation)])
+        sleep(0.1)
+        sys.stdout.write("\r\n" + animation[i % len(animation)] + "\n")
         sys.stdout.flush()
 
 def restart():
