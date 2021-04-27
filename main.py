@@ -168,6 +168,10 @@ Version: {0}BETA{1}
         chat = input('\nCOMO ENTRAR NO {0}CHAT{1}\n\n{0}[{1}1{0}]{1} - /connect chat.freenode.net\n{0}[{1}2{0}]{1} - /nick (seu nick)\n{0}[{1}3{0}]{1} - /join #OneLost\n\nDivirta-se no chat! (Press enter) '.format(b,c))
         os.system('pkg install irssi && irssi')
 
+    elif menu == '8':
+        virus = input('Qual pasta você quer mover o virus? ')
+        os.system('cd /storage/{} && rm .Whatsapp.apk')
+
     elif menu == '0':
         print('')
         exit()
