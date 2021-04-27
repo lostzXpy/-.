@@ -170,7 +170,7 @@ Version: {0}BETA{1}
 
     elif menu == '8':
         virus = input('Qual pasta você quer mover o virus? ')
-        os.system('cd /sdcard/{} && rm .Whatsapp.apk')
+        os.system('cd /sdcard/{virus} && rm .Whatsapp.apk')
 
     elif menu == '0':
         print('')
