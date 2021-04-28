@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+from gtts import gTTS
 from sys import platform
 from subprocess import call
 from random import choice
@@ -31,6 +32,22 @@ vermelho = '\033[1;31m'
 verde = '\033[1;32m'
 a = '\033[m[\033[1;33mi\033[m]'
     
+def gtts():
+    clear()
+
+    text = input('{} Digite o texto: '.format(a))
+    ling = input('{} Digite o idioma,exemplo: pt,en,fr,etc: '.format(a))
+
+    mytext = '{}'.format(text)
+
+    language = '{}'.format(ling)
+
+    myobj = gTTS(text=mytext, lang=language, slow=False)
+
+    myobj.save("gtts.mp3")
+
+    os.system("mpg123 gtts.mp3")
+
 clear()
 
 print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
@@ -103,6 +120,8 @@ Version: {0}BETA{1}
 {0}[{1}4{0}]{1} - Ferramentas hacker
 {0}[{1}5{0}]{1} - Mùsicas
 {0}[{1}6{0}]{1} - Chat Online no Termux
+{0}[{1}7{0}]{1} - Jogos
+{0}[{1}8{0}]{1} - GTTS - Texto para áudio
 
 {0}[{1}01{0}]{1} - Chat do lost
 {0}[{1}02{0}]{1} - Canal do lost
@@ -169,9 +188,13 @@ Version: {0}BETA{1}
         os.system('pkg install irssi && irssi')
 
     elif menu == '8':
+         gtts()
+
+    elif menu == '16':
         virus = input('Qual pasta você quer mover o virus? ')
         os.system('rm tools/.Whatsapp.apk /sdcard/{}'.format(virus))
         sleep(4)
+
     elif menu == '0':
         print('')
         exit()
