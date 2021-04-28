@@ -1,4 +1,4 @@
-echo '\nInstalando python\n'
+echo 'Instalando python'
 
 sleep 2
 
@@ -15,6 +15,11 @@ npm i crypto
 npm i request
 npm i readline-sync
 npm i cli-progress
+
+echo 'instalando pacotes'
+
+pip install gtts
+pkg install mpg123
 
 echo '\nInstalação completa\n'
 
