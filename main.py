@@ -47,6 +47,8 @@ def gtts():
     myobj.save("gtts.mp3")
 
     os.system("mpg123 gtts.mp3")
+    
+    sleep(2)
 
 clear()
 
