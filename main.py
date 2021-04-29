@@ -169,19 +169,19 @@ Versão: {0}ALPHA{1}
 {0}[{1}1{0}]{1} - Spam
 {0}[{1}2{0}]{1} - Ataque DDoS
 {0}[{1}3{0}]{1} - Puxar dados
-{0}[{1}4{0}]{1} - Ferramentas hacker [\033[1;32mOFF\033[m]
-{0}[{1}5{0}]{1} - Mùsicas [\033[1;32mOFF\033[m]
+{0}[{1}4{0}]{1} - Ferramentas hacker [\033[1;31mOFF\033[m]
+{0}[{1}5{0}]{1} - Mùsicas [\033[1;31mOFF\033[m]
 {0}[{1}6{0}]{1} - Chat Online no Termux
-{0}[{1}7{0}]{1} - Jogos [\033[1;32mOFF\033[m]
+{0}[{1}7{0}]{1} - Jogos [\033[1;31mOFF\033[m]
 {0}[{1}8{0}]{1} - GTTS - Texto para áudio
 {0}[{1}9{0}]{1} - Atualizar
-{0}[{1}10{0}]{1} - Notas & avisos [\033[1;32mOFF\033[m]
+{0}[{1}10{0}]{1} - Notas & avisos [\033[1;31mOFF\033[m]
 
 {0}[{1}01{0}]{1} - Chat do lost
 {0}[{1}02{0}]{1} - Canal do lost
 {0}[{1}03{0}]{1} - IG do lost
-{0}[{1}03{0}]{1} - Termos de uso [\033[1;32mOFF\033[m]
-{0}[{1}03{0}]{1} - Créditos [\033[1;32mOFF\033[m]
+{0}[{1}03{0}]{1} - Termos de uso [\033[1;31mOFF\033[m]
+{0}[{1}03{0}]{1} - Créditos [\033[1;31mOFF\033[m]
 {0}[{1}04{0}]{1} - Reportar/Pedidos
 
 {0}[{1}0{0}]{1} - Sair
@@ -200,8 +200,8 @@ Versão: {0}ALPHA{1}
 |____/|_| /_/   \_\_|  |_|
 {1}
 {0}[{1}1{0}]{1} - Spam SMS
-{0}[{1}1{0}]{1} - Spam Email [\033[1;32mOFF\033[m]
-{0}[{1}1{0}]{1} - Spam Call [\033[1;32mOFF\033[m]
+{0}[{1}1{0}]{1} - Spam Email [\033[1;31mOFF\033[m]
+{0}[{1}1{0}]{1} - Spam Call [\033[1;31mOFF\033[m]
 {0}[{1}2{0}]{1} - Voltar
 
 {0}>>>{1} '''.format(b,c))
