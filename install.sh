@@ -21,6 +21,6 @@ echo 'instalando pacotes'
 pip install gtts
 pkg install mpg123
 
-echo '\nInstalação completa\n'
+echo 'Instalação completa'
 
 sleep 2
