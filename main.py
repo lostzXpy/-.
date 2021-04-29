@@ -30,6 +30,11 @@ def clear():
     
 vermelho = '\033[1;31m'
 verde = '\033[1;32m'
+amarelo = '\033[1;33m'
+azul = '\033[1;34m'
+magenta = '\033[1;35m'
+ciano = '\033[1;36m'
+
 a = '\033[m[\033[1;33mi\033[m]'
     
 def gtts():
@@ -53,17 +58,21 @@ def gtts():
 clear()
 
 print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
-print('{} Verificando atualizações...'.format(a))
-update = subprocess.check_output('git pull', shell=True)
-if 'Already up to date' not in update.decode():
-    print('{} Atualizado com sucesso,iniciando...'.format(a))
-    sleep(1)
-    subprocess.run('clear')
-    restart()
-else:
-    print('{} Nenhuma atualização disponível.'.format(a))
-    sleep(1)
-  
+
+def att():
+    print('{} Verificando atualizações...'.format(a))
+    update = subprocess.check_output('git pull', shell=True)
+    if 'Already up to date' not in update.decode():
+        print('{} Atualizado com sucesso,iniciando...'.format(a))
+        sleep(1)
+        subprocess.run('clear')
+        restart()
+    else:
+        print('{} Nenhuma atualização disponível.'.format(a))
+        sleep(1)
+
+att()
+
 nome = input('{} Me diga como quer ser chamado: '.format(a))
 
 senha = 'ByOneLost'
@@ -73,6 +82,10 @@ while True:
     
 [\033[1;33m1\033[m] - Vermelho
 [\033[1;33m2\033[m] - Verde
+[\033[1;33m2\033[m] - Amarelo
+[\033[1;33m2\033[m] - Azul
+[\033[1;33m2\033[m] - Magenta
+[\033[1;33m2\033[m] - Ciano
     
 >>> '''.format(a))
     if tema == '1':
@@ -90,6 +103,42 @@ while True:
         spin()
         print('\n')
         b = '\033[1;32m'
+        c = '\033[m'
+        sleep(1)
+        break
+    elif tema == '3':
+        print('\nTema definido para {}amarelo!\n\033[m'.format(amarelo))
+        print('\n')
+        spin()
+        print('\n')
+        b = '\033[1;33m'
+        c = '\033[m'
+        sleep(1)
+        break
+    elif tema == '4':
+        print('\nTema definido para {}azul!\n\033[m'.format(azul))
+        print('\n')
+        spin()
+        print('\n')
+        b = '\033[1;34m'
+        c = '\033[m'
+        sleep(1)
+        break
+    elif tema == '5':
+        print('\nTema definido para {}magenta!\n\033[m'.format(magenta))
+        print('\n')
+        spin()
+        print('\n')
+        b = '\033[1;35m'
+        c = '\033[m'
+        sleep(1)
+        break
+    elif tema == '6':
+        print('\nTema definido para {}ciano!\n\033[m'.format(ciano))
+        print('\n')
+        spin()
+        print('\n')
+        b = '\033[1;36m'
         c = '\033[m'
         sleep(1)
         break
