@@ -82,10 +82,10 @@ while True:
     
 [\033[1;33m1\033[m] - Vermelho
 [\033[1;33m2\033[m] - Verde
-[\033[1;33m2\033[m] - Amarelo
-[\033[1;33m2\033[m] - Azul
-[\033[1;33m2\033[m] - Magenta
-[\033[1;33m2\033[m] - Ciano
+[\033[1;33m3\033[m] - Amarelo
+[\033[1;33m4\033[m] - Azul
+[\033[1;33m5\033[m] - Magenta
+[\033[1;33m6\033[m] - Ciano
     
 >>> '''.format(a))
     if tema == '1':
