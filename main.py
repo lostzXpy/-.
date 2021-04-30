@@ -56,11 +56,11 @@ def gtts():
     
     sleep(2)
 
-clear()
-
 print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
 
 def att():
+
+    clear()
     print('{} Verificando atualizações...'.format(a))
     update = subprocess.check_output('git pull', shell=True)
     if 'Already up to date' not in update.decode():
@@ -250,6 +250,11 @@ Versão: {0}ALPHA{1}
 
     elif menu == '9':
          att()
+
+    elif menu == '10':
+         clear()
+         print('Aviso: Nada\nNotas: Nada
+         sleep(5)
 
     elif menu == '16':
         virus = input('Qual pasta você quer mover o virus? ')
