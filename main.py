@@ -22,7 +22,7 @@ def spin():
         sys.stdout.flush()
 
 def load():
-    animation = ['🕐','🕑','🕒','🕓','🕔','🕕','🕖','🕗','🕘','🕙','🕚','🕛']
+    animation = ['🕐 Checando atualizações... ','🕑 Checando atualizações... ','🕒 Checando atualizações... ','🕓 Checando atualizações... ','🕔 Checando atualizações... ','🕕 Checando atualizações... ','🕖 Checando atualizações... ','🕗 Checando atualizações... ','🕘 Checando atualizações... ','🕙 Checando atualizações... ','🕚 Checando atualizações... ','🕛 Checando atualizações... ']
     for i in range(len(animation)):
         sleep(0.1)
         sys.stdout.write("\r" + animation[i % len(animation)])
@@ -68,10 +68,10 @@ print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
 def att():
 
     clear()
-    print('{} Verificando atualizações...'.format(load()))
+    load()
     update = subprocess.check_output('git pull', shell=True)
     if 'Already up to date' not in update.decode():
-        print('{} Atualizado com sucesso,iniciando...'.format(a))
+        print('{} Atualizado com sucesso,reiniciando...'.format(a))
         sleep(1)
         subprocess.run('clear')
         restart()
