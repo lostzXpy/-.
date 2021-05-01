@@ -44,24 +44,9 @@ ciano = '\033[1;36m'
 
 a = '\033[m[\033[1;33mi\033[m]'
     
-def gtts():
 
-    clear()
-
-    text = input('{} Digite o texto: '.format(a))
-    ling = input('{} Digite o idioma,exemplo: pt,en,fr,etc: '.format(a))
-
-    mytext = '{}'.format(text)
-
-    language = '{}'.format(ling)
-
-    myobj = gTTS(text=mytext, lang=language, slow=False)
-
-    myobj.save("gtts.mp3")
-
-    os.system("mpg123 gtts.mp3")
-    
-    sleep(2)
+            
+              
 
 print('\033[1;33mAviso | \033[mEssa ferramenta está em versão ALPHA!\n')
 
@@ -253,8 +238,33 @@ Versão: {0}ALPHA{1}
         os.system('pkg install irssi && irssi')
 
     elif menu == '8':
-         gtts()
+         def gtts():
+             while True:
 
+             clear()
+
+             text = input('{} Digite o texto: '.format(a))
+             ling = input('{} Digite o idioma,exemplo: pt,en,fr,etc: '.format(a))
+ 
+             mytext = '{}'.format(text)
+
+             language = '{}'.format(ling)
+ 
+             myobj = gTTS(text=mytext, lang=language, slow=False)
+
+             myobj.save("gtts.mp3")
+
+             os.system("mpg123 gtts.mp3")
+    
+             sleep(2)
+           
+             gtt = input('\nDeseja executar outro áudio? (s/n): ')
+     
+             if gtt == 'n':
+                break
+             else:
+                print('')
+         gtts()
     elif menu == '9':
          att()
 
