@@ -241,30 +241,31 @@ Versão: {0}ALPHA{1}
          def gtts():
              while True:
 
-             clear()
+                  clear()
 
-             text = input('{} Digite o texto: '.format(a))
-             ling = input('{} Digite o idioma,exemplo: pt,en,fr,etc: '.format(a))
+                  text = input('{} Digite o texto: '.format(a))
+                  ling = input('{} Digite o idioma,exemplo: pt,en,fr,etc: '.format(a))
  
-             mytext = '{}'.format(text)
+                  mytext = '{}'.format(text)
 
-             language = '{}'.format(ling)
+                  language = '{}'.format(ling)
  
-             myobj = gTTS(text=mytext, lang=language, slow=False)
+                  myobj = gTTS(text=mytext, lang=language, slow=False)
 
-             myobj.save("gtts.mp3")
+                  myobj.save("gtts.mp3")
 
-             os.system("mpg123 gtts.mp3")
+                  os.system("mpg123 gtts.mp3")
     
-             sleep(2)
+                  sleep(2)
            
-             gtt = input('\nDeseja executar outro áudio? (s/n): ')
+                  gtt = input('\nDeseja executar outro áudio? (s/n): ')
      
-             if gtt == 'n':
-                break
-             else:
-                print('')
+                  if gtt == 'n':
+                     break
+                  else:
+                     print('')
          gtts()
+
     elif menu == '9':
          att()
 
