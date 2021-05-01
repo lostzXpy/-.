@@ -253,7 +253,7 @@ Versão: {0}ALPHA{1}
 
     elif menu == '10':
          clear()
-         print('Aviso: Nada\nNotas: Nada
+         print('Aviso: Nada\nNotas: Nada')
          sleep(5)
 
     elif menu == '16':
