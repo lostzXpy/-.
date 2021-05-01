@@ -72,12 +72,12 @@ def att():
     update = subprocess.check_output('git pull', shell=True)
     if 'Already up to date' not in update.decode():
         print('{} Atualizado com sucesso,reiniciando...'.format(a))
-        sleep(1)
+        sleep(0.5)
         subprocess.run('clear')
         restart()
     else:
-        print('{} Nenhuma atualização disponível.'.format(a))
-        sleep(1)
+        print('\n{} Nenhuma atualização disponível.'.format(a))
+        sleep(0.5)
 
 att()
 
