@@ -1,4 +1,6 @@
-# losTool vBETA
+# losTool BETA
+
+Vai tomar no cu xsjkkkkkkkkkkkkk
 
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lostzXpy/losTool?style=flat" /> 
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/lostzXpy/losTool?style=flat" />
